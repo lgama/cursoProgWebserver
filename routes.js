@@ -21,7 +21,7 @@ function escucha(app) {
     // next : accion a realizar en caso de algun error
     router.get('/datos', async function(req, res, next) {
         try {
-            console.log('recibiendo' + JSON.stringify(req))
+            console.log('recibiendo' + req.body)
             res.status(200).json({
                 'nombre':'LUIS A. GAMA MORENO',
                 'telefono': '1234567890',
